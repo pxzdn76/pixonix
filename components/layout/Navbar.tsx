@@ -33,8 +33,9 @@ export function Navbar() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-200 shadow-sm">
-      <nav className="flex items-center justify-between p-4 lg:px-8 max-w-7xl mx-auto" aria-label="Global">
+    <>
+      <header className="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur-lg border-b border-slate-200 shadow-sm">
+        <nav className="flex items-center justify-between p-4 lg:px-8 max-w-7xl mx-auto" aria-label="Global">
         <div className="flex lg:flex-1 items-center">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center">
             <span className="sr-only">Pixonix</span>
@@ -109,12 +110,13 @@ export function Navbar() {
           >
             Démarrer un projet <span aria-hidden="true">&rarr;</span>
           </Link>
-        </div>
-      </nav>
+          </div>
+        </nav>
+      </header>
 
       {/* Mobile menu (simplified overlay) */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-white/98 backdrop-blur-sm p-6 overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 z-[100] bg-white/95 backdrop-blur-md p-6 overflow-y-auto">
           <div className="flex items-center justify-between border-b border-slate-100 pb-4">
             <Link href="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
               <div className="relative w-56 h-14">
@@ -177,6 +179,6 @@ export function Navbar() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
