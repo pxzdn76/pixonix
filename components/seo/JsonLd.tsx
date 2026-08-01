@@ -21,6 +21,7 @@ export function OrganizationJsonLd() {
     "image": "https://www.pixonix.fr/logo.png",
     "@id": "https://www.pixonix.fr",
     "url": "https://www.pixonix.fr",
+    "telephone": "+33754067793",
     "address": [
       {
         "@type": "PostalAddress",

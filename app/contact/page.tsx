@@ -99,7 +99,7 @@ export default function ContactPage() {
                 <div className="flex gap-4 items-center">
                   <PhoneIcon className="w-6 h-6 text-primary flex-shrink-0" />
                   <div>
-                    <p className="text-white font-medium">+33 (0)7 60 49 56 06</p>
+                    <p className="text-white font-medium">07 54 06 77 93</p>
                   </div>
                 </div>
               </div>
