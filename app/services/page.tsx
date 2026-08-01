@@ -107,7 +107,7 @@ export default function ServicesPage() {
                  <div className="absolute w-64 h-64 bg-primary/10 blur-3xl rounded-full group-hover:bg-primary/20 transition-colors duration-500" />
                  {/* Cloned large icon */}
                  <div className="text-primary/40 group-hover:text-primary/60 transition-all duration-500 group-hover:scale-110 transform">
-                   {React.cloneElement(service.icon as React.ReactElement, { className: 'w-48 h-48' })}
+                   {React.cloneElement(service.icon as React.ReactElement<any>, { className: 'w-48 h-48' })}
                  </div>
                </div>
             </div>
