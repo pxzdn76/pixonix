@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pixonix | Ingénierie Logicielle & Architecture Cloud-Native",
-  description: "Pixonix, expert en développement backend (Java/Spring Boot), architecture Cloud-Native et ingénierie logicielle robuste à Rouen et Paris.",
-  keywords: "Ingénierie logicielle, Cloud-Native, DevOps, Java, Spring Boot, B2B, Rouen, Paris",
+  title: "Pixonix | Création de Sites Web & Transformation Digitale Sur-Mesure",
+  description: "Pixonix conçoit des sites vitrines, plateformes e-commerce et applications sur-mesure pour propulser votre entreprise. Basés à Rouen et Paris.",
+  keywords: "création site web, site vitrine, e-commerce, application sur-mesure, transformation digitale, Rouen, Paris, développement web",
   metadataBase: new URL('https://www.pixonix.fr'),
   alternates: {
     canonical: '/',
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Pixonix | Ingénierie Logicielle",
-    description: "Expert en développement backend et Cloud-Native.",
+    title: "Pixonix | Création de Sites Web & Transformation Digitale",
+    description: "Sites vitrines, e-commerce et applications sur-mesure pour propulser votre entreprise. Basés à Rouen et Paris.",
     url: "https://www.pixonix.fr",
     siteName: "Pixonix",
     images: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg', // Vous devrez ajouter cette image dans le dossier public/
         width: 1200,
         height: 630,
-        alt: 'Pixonix - Ingénierie Logicielle',
+        alt: 'Pixonix - Création de Sites Web & Transformation Digitale',
       }
     ],
     locale: "fr_FR",
