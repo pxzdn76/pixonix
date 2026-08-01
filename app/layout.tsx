@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Pixonix | Création de Sites Web & Transformation Digitale Sur-Mesure",
-  description: "Pixonix conçoit des sites vitrines, plateformes e-commerce et applications sur-mesure pour propulser votre entreprise. Basés à Rouen et Paris.",
-  keywords: "création site web, site vitrine, e-commerce, application sur-mesure, transformation digitale, Rouen, Paris, développement web",
+  title: "Pixonix | Ingénierie Digitale & Solutions Web Haute Performance",
+  description: "Partenaire technologique des entreprises ambitieuses. Pixonix architecte et développe des plateformes corporate, écosystèmes e-commerce et applications métiers sur-mesure. Experts basés à Rouen et Paris.",
+  keywords: "ingénierie digitale, architecture web, développement sur-mesure, applications métiers, plateformes e-commerce, transformation numérique, agence tech, Rouen, Paris",
   metadataBase: new URL('https://www.pixonix.fr'),
   alternates: {
     canonical: '/',
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Pixonix | Création de Sites Web & Transformation Digitale",
-    description: "Sites vitrines, e-commerce et applications sur-mesure pour propulser votre entreprise. Basés à Rouen et Paris.",
+    title: "Pixonix | Ingénierie Digitale & Solutions Web Sur-Mesure",
+    description: "Écosystèmes digitaux robustes et applications métiers pour accélérer votre croissance. Cabinet d'ingénierie basé à Rouen et Paris.",
     url: "https://www.pixonix.fr",
     siteName: "Pixonix",
     images: [
       {
-        url: '/og-image.jpg', // Vous devrez ajouter cette image dans le dossier public/
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Pixonix - Création de Sites Web & Transformation Digitale',
+        alt: 'Pixonix - Ingénierie Digitale & Architecture Web',
       }
     ],
     locale: "fr_FR",
@@ -63,30 +63,30 @@ export default function RootLayout({
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-white font-montserrat">Pixonix</h3>
               <p className="text-text-muted text-sm leading-relaxed">
-                Ingénierie logicielle d'excellence et transformation digitale sur-mesure.
+                Cabinet d'ingénierie technologique. Nous concevons des écosystèmes digitaux robustes et des expériences web haute performance.
               </p>
             </div>
             <div>
               <h4 className="text-white font-bold mb-4">Navigation</h4>
               <ul className="space-y-2 text-sm text-text-muted">
                 <li><a href="/" className="hover:text-primary transition-colors">Accueil</a></li>
-                <li><a href="/services" className="hover:text-primary transition-colors">Services</a></li>
-                <li><a href="/a-propos" className="hover:text-primary transition-colors">À Propos</a></li>
-                <li><a href="/realisations" className="hover:text-primary transition-colors">Réalisations</a></li>
+                <li><a href="/expertise" className="hover:text-primary transition-colors">Notre Expertise</a></li>
+                <li><a href="/a-propos" className="hover:text-primary transition-colors">Le Cabinet</a></li>
+                <li><a href="/etudes-de-cas" className="hover:text-primary transition-colors">Études de Cas</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-4">Services</h4>
+              <h4 className="text-white font-bold mb-4">Solutions</h4>
               <ul className="space-y-2 text-sm text-text-muted">
-                <li><a href="/services#vitrine" className="hover:text-primary transition-colors">Sites Vitrines</a></li>
-                <li><a href="/services#ecommerce" className="hover:text-primary transition-colors">E-commerce</a></li>
-                <li><a href="/services#application" className="hover:text-primary transition-colors">Applications Métiers</a></li>
+                <li><a href="/expertise#plateformes-corporate" className="hover:text-primary transition-colors">Plateformes Corporate</a></li>
+                <li><a href="/expertise#commerce-digital" className="hover:text-primary transition-colors">Commerce Digital</a></li>
+                <li><a href="/expertise#applications-metiers" className="hover:text-primary transition-colors">Applications Métiers & SaaS</a></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white font-bold mb-4">Légal</h4>
               <ul className="space-y-2 text-sm text-text-muted">
-                <li><a href="/contact" className="hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="/contact" className="hover:text-primary transition-colors">Nous Contacter</a></li>
                 <li><a href="/mentions-legales" className="hover:text-primary transition-colors">Mentions Légales</a></li>
                 <li><a href="/politique-confidentialite" className="hover:text-primary transition-colors">Confidentialité</a></li>
               </ul>
