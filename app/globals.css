@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  /* Couleurs (Palette Dark Tech) */
+  --color-primary: #00D4FF;
+  --color-primary-hover: #00BBE6;
+  --color-secondary: #023E8A;
+  
+  /* Background & Surfaces */
+  --color-bg-dark: #0F172A; /* slate-900 */
+  --color-surface: #1E293B; /* slate-800 */
+  --color-surface-hover: #334155; /* slate-700 */
+
+  /* Textes */
+  --color-text-title: #FFFFFF;
+  --color-text-body: #CBD5E1; /* slate-300 */
+  --color-text-muted: #94A3B8; /* slate-400 */
+
+  /* Polices */
+  --font-montserrat: var(--font-montserrat);
+  --font-inter: var(--font-inter);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.5; filter: blur(20px); }
+  50% { opacity: 0.8; filter: blur(30px); }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-body);
+    font-family: var(--font-inter), sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-text-title);
+    font-family: var(--font-montserrat), sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-slate-800/50 backdrop-blur-md border border-slate-700/50;
+  }
+  
+  .tech-shadow {
+    @apply shadow-lg shadow-primary/10 transition-shadow duration-300 hover:shadow-primary/25;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out forwards;
+  }
+  
+  .animate-glow {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+  
+  .stagger-1 { animation-delay: 100ms; }
+  .stagger-2 { animation-delay: 200ms; }
+  .stagger-3 { animation-delay: 300ms; }
+}
